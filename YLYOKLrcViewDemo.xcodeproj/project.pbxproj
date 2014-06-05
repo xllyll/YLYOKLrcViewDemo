@@ -21,6 +21,10 @@
 		1898BC1E192E156F00AE2FC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898BC00192E156E00AE2FC5 /* UIKit.framework */; };
 		1898BC26192E157000AE2FC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1898BC24192E157000AE2FC5 /* InfoPlist.strings */; };
 		1898BC28192E157100AE2FC5 /* YLYOKLrcViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898BC27192E157100AE2FC5 /* YLYOKLrcViewDemoTests.m */; };
+		1898BC35192E159500AE2FC5 /* YLYMusicLRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898BC32192E159500AE2FC5 /* YLYMusicLRC.m */; };
+		1898BC36192E159500AE2FC5 /* YLYOKLRCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898BC34192E159500AE2FC5 /* YLYOKLRCView.m */; };
+		1898BC3A192E15C300AE2FC5 /* 李克勤 - 月半夜小夜曲.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 1898BC38192E15C300AE2FC5 /* 李克勤 - 月半夜小夜曲.lrc */; };
+		1898BC3B192E15C300AE2FC5 /* 月半小夜曲.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1898BC39192E15C300AE2FC5 /* 月半小夜曲.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		1898BC23192E157000AE2FC5 /* YLYOKLrcViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YLYOKLrcViewDemoTests-Info.plist"; sourceTree = "<group>"; };
 		1898BC25192E157000AE2FC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1898BC27192E157100AE2FC5 /* YLYOKLrcViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLYOKLrcViewDemoTests.m; sourceTree = "<group>"; };
+		1898BC31192E159500AE2FC5 /* YLYMusicLRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLYMusicLRC.h; sourceTree = "<group>"; };
+		1898BC32192E159500AE2FC5 /* YLYMusicLRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLYMusicLRC.m; sourceTree = "<group>"; };
+		1898BC33192E159500AE2FC5 /* YLYOKLRCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLYOKLRCView.h; sourceTree = "<group>"; };
+		1898BC34192E159500AE2FC5 /* YLYOKLRCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLYOKLRCView.m; sourceTree = "<group>"; };
+		1898BC38192E15C300AE2FC5 /* 李克勤 - 月半夜小夜曲.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "李克勤 - 月半夜小夜曲.lrc"; sourceTree = "<group>"; };
+		1898BC39192E15C300AE2FC5 /* 月半小夜曲.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "月半小夜曲.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +122,14 @@
 		1898BC02192E156E00AE2FC5 /* YLYOKLrcViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1898BC37192E159D00AE2FC5 /* YLYOKLrcView */,
 				1898BC0B192E156E00AE2FC5 /* YLYAppDelegate.h */,
 				1898BC0C192E156E00AE2FC5 /* YLYAppDelegate.m */,
 				1898BC0E192E156F00AE2FC5 /* Main.storyboard */,
 				1898BC11192E156F00AE2FC5 /* YLYViewController.h */,
 				1898BC12192E156F00AE2FC5 /* YLYViewController.m */,
+				1898BC38192E15C300AE2FC5 /* 李克勤 - 月半夜小夜曲.lrc */,
+				1898BC39192E15C300AE2FC5 /* 月半小夜曲.mp3 */,
 				1898BC14192E156F00AE2FC5 /* Images.xcassets */,
 				1898BC03192E156E00AE2FC5 /* Supporting Files */,
 			);
@@ -150,6 +163,17 @@
 				1898BC24192E157000AE2FC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1898BC37192E159D00AE2FC5 /* YLYOKLrcView */ = {
+			isa = PBXGroup;
+			children = (
+				1898BC31192E159500AE2FC5 /* YLYMusicLRC.h */,
+				1898BC32192E159500AE2FC5 /* YLYMusicLRC.m */,
+				1898BC33192E159500AE2FC5 /* YLYOKLRCView.h */,
+				1898BC34192E159500AE2FC5 /* YLYOKLRCView.m */,
+			);
+			name = YLYOKLrcView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +253,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1898BC3A192E15C300AE2FC5 /* 李克勤 - 月半夜小夜曲.lrc in Resources */,
+				1898BC3B192E15C300AE2FC5 /* 月半小夜曲.mp3 in Resources */,
 				1898BC15192E156F00AE2FC5 /* Images.xcassets in Resources */,
 				1898BC07192E156E00AE2FC5 /* InfoPlist.strings in Resources */,
 				1898BC10192E156F00AE2FC5 /* Main.storyboard in Resources */,
@@ -250,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1898BC35192E159500AE2FC5 /* YLYMusicLRC.m in Sources */,
 				1898BC13192E156F00AE2FC5 /* YLYViewController.m in Sources */,
 				1898BC09192E156E00AE2FC5 /* main.m in Sources */,
 				1898BC0D192E156E00AE2FC5 /* YLYAppDelegate.m in Sources */,
+				1898BC36192E159500AE2FC5 /* YLYOKLRCView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
